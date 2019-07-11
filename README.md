@@ -1,2 +1,3 @@
 # portfolio_french
-Quick_overview_of_my_profil
+Quick overview of my profil
+in french, my native language
