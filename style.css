@@ -1,0 +1,396 @@
+@font-face {
+    font-family: 'robotothin';
+    src: url('../Fonts/Roboto-Thin-webfont.eot');
+    src: url('../Fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/Roboto-Thin-webfont.woff') format('woff'),
+         url('../Fonts/Roboto-Thin-webfont.ttf') format('truetype'),
+         url('../Fonts/Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'robotolight';
+    src: url('../Fonts/Roboto-Light-webfont.eot');
+    src: url('../Fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('../Fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../Fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*
+{
+	margin: 0;
+}
+
+body
+{
+	font-family: 'robotolight', Helvetica, sans serif;
+}
+
+#blocAccueil
+{
+	border: 0/*3px green solid*/;
+	background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../Images/TorontoBW.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	margin: 0;
+	min-height: 100vh;
+	/*background-color: rgba(0, 0, 0, 1);*/
+}
+
+a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #E44C4F;
+	text-decoration: none;
+	/*animation: slow;*/
+}
+
+#navigation
+{
+	/*float: top;*/
+	position: absolute;
+	/*top: 0px;
+	left: 0px;*/
+	z-index: 4;
+}
+
+header #navigation 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0 /*1px red solid;*/
+    height: 70px;
+    margin: 0;
+    padding: 30px 0px 0px 0px;
+    position: fixed;
+    min-width: 100px;
+    width: 100%;
+}
+
+header #retourAccueil
+{
+	display: flex;
+	border: 0; /*1px blue solid;*/
+	padding: 0px 0px 0px 40px; 
+}
+
+nav ul
+{
+	display: flex;
+	border: 0; /*1px pink solid;*/
+	justify-content: space-between;
+	text-align: justify;
+	padding: 0px 20px 0px 0px;
+}
+
+li
+{
+  list-style-type: none;
+}
+
+nav li
+{
+	margin-right: 1.5em;
+}
+
+#Presentation
+{
+	display: flex;
+	/*border: 1px white solid;*/
+	flex-direction: row;
+	max-height: 100vh;
+	margin: 0;
+}
+
+#textePresentation
+{
+	display: flex;
+	text-align: right;
+	justify-content: space-around;
+	/*border: 3px green solid;*/
+	flex-direction: column;
+	width: 60%;
+	padding: 0 20px 0 0;
+}
+
+#textePresentation h1
+{
+	position: relative;
+	top: 200px;
+	font: inherit;
+	font-size: 3em;
+	/*border: 3px red solid;*/
+}
+
+#textePresentation p
+{
+	position: relative;
+	bottom: 50px;
+	margin: 0;
+	font-size: 2em;
+	/*border: 3px blue solid;*/
+}
+
+#imagePresentation
+{
+	display: flex;
+	margin: auto;
+	/*border: 3px yellow solid;*/
+	width: 40%;
+	min-height: 100vh;
+	align-items: center;
+	padding: 0 0 0 10px;
+}
+
+#imagePresentation img 
+{
+	overflow:hidden;
+    -webkit-border-radius:125px;
+    -moz-border-radius:125px;
+    border-radius:125px;
+    width:250px;
+    height:250px;
+    /*border: 3px grey solid;*/
+    position: relative;
+    top: 80px;
+}
+
+#pageActualites
+{
+	display: flex;
+	margin: 0;
+	min-height: 100vh;
+	border: 0/*2px orange solid*/;
+	/*background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../Images/Prs.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;*/
+	color: white;
+}
+
+#Actualites
+{
+	display: flex;
+	text-align: justify;
+	padding: 0 100px 0 100px;
+	flex-direction: column;
+	min-height: 100vh;
+	/*margin: auto;*/
+	/*border: 2px orange solid;*/
+	background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../Images/Prs.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	align-content: space-between;
+}
+
+#Actualites h1
+{
+	text-align: center;
+	font-size: 3em;
+	position: relative;
+	top: 200px;
+}
+
+#Actualites p
+{
+	font: inherit;
+	font-size: 2em;
+	margin: auto;
+}
+
+#pageCV
+{
+	display: flex;
+	margin: 0;
+	max-height: 100vh;
+	/*border: 2px orange solid;*/
+	/*background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../Images/Prs.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;*/
+	color: black;
+}
+
+#CV
+{
+	display: flex;
+	text-align: justify;
+	/*padding: 0 100px 0 100px;*/
+	flex-direction: column;
+	min-height: 100vh;
+	min-width: 100%;
+	/*margin: auto;*/
+	/*align-content: space-between;*/
+	background-color: black;
+	justify-content: flex-start;
+	/*border: 4px yellow solid;*/
+	align-items: stretch;
+}
+
+#CV h1
+{
+	z-index: 3;
+	text-align: center;
+	font-size: 3em;
+	position: relative;
+	top: 60px;
+	color: white;
+}
+
+#CV h2
+{
+	text-align: center;
+	font-size: 2.2em;
+	/*position: relative;
+	top: 150px;*/
+	color: white;
+}
+
+#CV p
+{
+	text-align: center;
+	font-size: 1.8em;
+	/*position: relative;
+	top: 200px;*/
+	margin: auto;
+	color: white;
+}
+
+#MEC
+{
+	/*position :absolute;*/
+	/*top: 0px;
+	left: 0px;*/
+	z-index: 2;
+	position: relative;
+	bottom: 65px;
+	min-height: 48vh;
+	min-width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../Images/MEC_Toronto_StoreFront.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+#MEC h2
+{
+	position: relative;
+	top: 130px;
+}
+
+#MEC p
+{
+	position: relative;
+	top: 150px;
+}
+
+#RVU
+{
+	z-index: 2;
+	position: relative;
+	bottom: 65px;
+	min-height: 48vh;
+	min-width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../Images/RVU1.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+#Comp
+{
+	z-index: 1;
+	min-height: 2vh;
+	min-width: 100%;
+	background-color: black;
+	background-size: 100%;
+	position: relative;
+	bottom: 65px;
+	/*border: 2px brown solid;*/
+}
+
+#Comp p
+{
+	font-size: 1em;
+	position: relative;
+	/*bottom: 40px;*/
+	/*border: 2px grey solid;*/
+}
+
+#Comp a
+{
+	color: dodgerblue;
+	text-decoration: underline;
+} 
+
+#Comp a:hover
+{
+	color: #E44C4F;
+}
+
+#pageHobbies
+{
+	display: flex;
+	margin: 0;
+	min-height: 100vh;
+	border: 0/*2px orange solid*/;
+	/*background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../Images/Prs.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;*/
+	color: white;
+}
+
+#Hobbies
+{
+	border: 0/*3px green solid*/;
+	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../Images/Hobbies.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/*background-size: cover;*/
+	color: white;
+	/*margin: 0;*/
+	min-height: 100vh;
+	max-height: 100vh;
+	min-width: 100%;
+	/*background-color: rgba(0, 0, 0, 1);*/
+}
+
+
+#Hobbies h1
+{
+	text-align: center;
+	font-size: 3em;
+	position: relative;
+	top: 200px;
+}
+
+#Hobbies h2
+{
+	text-align: center;
+	font-size: 2.5em;
+	position: relative;
+	top: 220px;
+}
+
+
+#Hobbies p
+{
+	font: inherit;
+	font-size: 2em;
+	margin: auto;
+	text-align: justify;
+	padding: 7.5em 4.75em 0em 4.75em;
+}
